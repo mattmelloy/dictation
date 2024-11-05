@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import AudioControls from './components/AudioControls';
 import TextEditor from './components/TextEditor';
-//import { Groq } from 'groq-sdk';
+import { Groq } from 'groq-sdk';
 import Settings from './components/Settings';
 
 function App() {
