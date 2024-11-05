@@ -56,7 +56,7 @@ function App() {
     if (!text.trim()) return;
     
     setIsProcessing(true);
-    const apiKey = import.meta.env.VITE_GROQ_API_KEY;
+    const apiKey = process.env.VITE_GROQ_API_KEY;
 
     try {
       const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
