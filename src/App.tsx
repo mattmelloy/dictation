@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import AudioControls from './components/AudioControls';
 import TextEditor from './components/TextEditor';
-import { Groq } from 'groq-sdk';
+//import { Groq } from 'groq-sdk';
 import Settings from './components/Settings';
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const [selectedVoiceModel, setSelectedVoiceModel] = useState('whisper-large-v3');
-  const [selectedTextModel, setSelectedTextModel] = useState('llama3-70b-8192');
+  const [selectedVoiceModel, setSelectedVoiceModel] = useState('distil-whisper-large-v3-en');
+  const [selectedTextModel, setSelectedTextModel] = useState('llama-3.2-3b-preview');
 
   const handleAudioInput = async (audio: Blob) => {
     setIsProcessing(true);
