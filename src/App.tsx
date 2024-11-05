@@ -70,7 +70,7 @@ function App() {
           messages: [
             {
               role: "system",
-              content: `You are a text improvement assistant. ${style}. Maintain the core meaning while adjusting the tone and style. Organize the text into proper paragraphs and fix any grammar or spelling issues.`
+              content: `You are a text improvement assistant. ${style}. You are a text improvement assistant. ${style}. Your task is to improve the text while maintaining its core meaning and adjusting the tone and style. Organize the text into proper paragraphs and fix any grammar or spelling issues. Only return the improved text without any explanations, headers, or footers. Do not include phrases like "Here's the improved text" or "I hope this helps." Just return the edited text directly.`
             },
             {
               role: "user",
