@@ -19,6 +19,16 @@ export default function TextEditor({ text, onTextChange, onImprove, isProcessing
 
   const styleButtons = [
     {
+      label: 'Improve Text',
+      style: 'Improve this text by enhancing grammar, sentence structure, and overall clarity while maintaining the original meaning. Only return the improved text.',
+      className: 'bg-indigo-600 hover:bg-indigo-700'
+    },
+    {
+      label: 'Make Concise',
+      style: 'Rewrite this text to be as concise as possible while maintaining all key information and meaning. Remove any redundancy and unnecessary words. Only return the shortened text.',
+      className: 'bg-teal-600 hover:bg-teal-700'
+    },
+    {
       label: 'Make Professional',
       style: 'Make my text formal and professional',
       className: 'bg-blue-600 hover:bg-blue-700'
